@@ -22,17 +22,21 @@ body {
 }
 
 h1 {
-    color: aliceblue;
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    color: rgb(231, 113, 17);
     font-size: 10rem;
     position: relative;
     animation: blurGlitch 3s ease-in-out;
 }
 
 a {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 220;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
+    color: rgb(231, 113, 17);
     font-size: 2rem;
     text-decoration: none;
     border: 1px solid grey;
@@ -40,7 +44,16 @@ a {
     width: 14rem;
     height: 3rem;  
     margin: 0 auto; 
+    border-radius: 5px;
+    cursor: pointer;
     animation: blurFadeIn 3s ease-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1); 
+    color: aliceblue;
+    background-color: rgb(231, 113, 17);
 }
 
 
@@ -82,12 +95,39 @@ a {
 
 @keyframes wobbleBg {
     0% { background-position: center; }
-    20% { background-position: 57% 43%; }  /* Stronger shift */
-    40% { background-position: 43% 57%; }  /* Moves the other way */
+    20% { background-position: 57% 43%; }  
+    40% { background-position: 43% 57%; }  
     60% { background-position: 56% 44%; }  
     80% { background-position: 44% 56%; }  
-    100% { background-position: center; }  /* Resets */
+    100% { background-position: center; } 
 }
 
 
 /*on smaller screen*/
+
+@media (max-width: 768px) {
+    body {
+        animation: wobbleBg 50s ease-in-out infinite alternate;
+    }
+    .intro { 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    h1 {
+        justify-content: center;
+        text-align: center;
+        font-size: 4rem; 
+    }
+    a {
+        width: 100px;
+        font-size: 1rem; 
+        color: rgb(231, 113, 17);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    a:hover {
+        transform: scale(1.1); 
+        color: aliceblue;
+        background-color: rgb(231, 113, 17);
+    }
+}
