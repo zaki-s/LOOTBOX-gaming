@@ -87,3 +87,181 @@ body {
 .sign i {
   font-size: 20px;
 }
+
+
+/*the intro i guess*/
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.introtext {
+  flex: 1; 
+  max-width: 50%;
+  padding-top: 10px; 
+}
+
+.introtext h1 {
+  font-size: 2.5rem;
+  color: rgb(231, 113, 17);
+  margin-bottom: 10px;
+}
+
+span {
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+.introtext p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+video {
+  flex: 1;
+  max-width: 40%; 
+  border-radius: 10px; 
+}
+
+
+/*cards*/
+#random-game {
+  font-family: "Poppins", sans-serif;
+  font-size: ;
+  text-align: center;
+  margin-top: 90px;
+}
+
+#random-game h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 2px;
+}
+
+#fetchGameBtn {
+  background-color: rgb(233, 195, 151);
+  color: rgb(231, 113, 17);
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+#fetchGameBtn:hover {
+  color: aliceblue;
+  background-color: rgb(231, 113, 17);
+  transform: scale(1.05);
+}
+
+/* game cards*/
+.game-card {
+  width: 95%;
+  max-width: 2200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row; 
+}
+
+/*game image*/
+.game-card img {
+  width: 45%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/*game description*/
+.game-info {
+  flex: 1;
+  text-align: left;
+}
+
+.game-info h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.game-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.game-info .description {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+/*the get game button*/
+.get-game-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: rgb(233, 195, 151);
+  color: rgb(231, 113, 17);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-game-btn:hover {
+  color: aliceblue;
+  background-color: rgb(231, 113, 17);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/*the footer....of course*/
+footer {
+  background-color: #131212;
+  position: relative;
+  color: rgb(238, 169, 113);
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px; 
+}
+
+
+footer h3 {
+  text-align: center;
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: rgb(231, 113, 17);
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+footer .icons {
+  font-size: 30px;
+}
+
+footer p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
