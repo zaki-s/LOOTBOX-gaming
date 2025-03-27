@@ -1,0 +1,89 @@
+
+/*whole body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+/*the navbar*/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar h1 {
+    flex: 1;
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(231, 113, 17);
+  }
+  
+/*nav links*/
+  .navbar ul {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li:hover {
+    color: rgb(231, 113, 17);
+  }
+  
+/*sign out button*/
+.sign {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#signbtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: rgb(28, 29, 29);
+  color: rgb(231, 113, 17);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+#signbtn:hover {
+  color: aliceblue;
+  background-color: rgb(231, 113, 17);
+  transform: scale(1.05);
+}
+
+#signbtn:active {
+  transform: scale(0.95);
+}
+
+/*icon*/
+.sign i {
+  font-size: 20px;
+}

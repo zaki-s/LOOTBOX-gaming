@@ -21,6 +21,7 @@ body {
     background-color: transparent;
     border: 2px solid rgb(225, 225, 225, .2);
     backdrop-filter: blur(10px);
+    border-radius: 10px;
     width: 420px;
     height: 400px;
     color: white;
